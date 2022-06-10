@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WhoAmI?</title>
+    <meta name="description" content="자기소개 홈페이지" />
+    <meta name="keywords" content="단국대, 자기소개, 코딩, 깃허브" />
+    <meta name="author" content="Subin Hong" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta propery="og:type" content="website" />
+    <!-- https://ogp.me/#types -->
+    <meta property="og:title" content="자신을 소개하는 홈페이지" />
+    <meta property="og:description" content="자신을 소개하는 홈페이지입니다." />
+    <meta property="og:image" content="{% static 'img/fun-coding-mark.png' %}" />
+    <meta property="og:url" content="https://www.fun-coding.org" />
+    <meta property="og:site_name" content="자기소개" />
+
+    <!-- twitter card (Twitter) -->
+    <!-- https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/twitter-cards-implementation-with-websites/Images/summary_card_tweet.png -->
+    <meta name="twitter:card" content="summary" />
+    <!-- card 종류: summary, photo, player -->
+    <meta name="twitter:title" content=="자신을 소개하는 홈페이지" />
+    <meta name="twitter:description" content=content="자신을 소개하는 홈페이지입니다."  />
+    <meta name="twitter:image" content="{% static 'img/fun-coding-mark.png' %}" />
+    <meta name="twitter:url" content="https://www.fun-coding.org" />
+    <meta name="twitter:creator" content="Subin Hong" />
+
+    <!-- 일반적인 fabicon 설정 -->
+    <link rel="icon" href="{% static 'img/fun-coding.ico' %}" />
+    <!-- 아이폰용 fabicon 설정 -->
+    <link rel="apple-touch-icon" href="{% static 'img/fun-coding.ico' %}" />
+    <!-- 인터넷 익스플로어용 fabicon 설정-->
+    <link rel="short icon" type="image/x-icon" href="{% static 'img/fun-coding.ico' %}" />
+
+    <!-- CSS Reset(1), 아이콘 폰트, 웹페이지 사용폰트, style.css -->
+    <link rel="stylesheet" href="{% static 'css/nomalize.css' %}" />
+    <!-- https://fontawesome.com/start -->
+    <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+    <!-- Spoca Han Sans Neo: https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+      <header>
+        <div class="head-container">
+            <div class="head-git"><i class="fab fa-github"></i><a href="https://github.com/sss654654">MyGit </a></div>
+            <div style="font: bold italic 2.0em/1.0em Georgia">Who Am I?</div>
+            <!-- <div class="box" style="background: #BDBDBD;">
+              <img class="profile" src="/img/the giver.jpg"/>
+            </div> -->
+            <div class="head-mail"><i class="fas fa-envelope"></i><a href="mailto:zed6740@dankook.ac.kr">ToMail</a></div>
+          </div>
+          <div class="head-container">
+            
+          </div>
+        </div>
+      </header>
+      <section class="main">
+        <div class="main-container">
+          <div class="inner">
+            <div class="title-container">
+              <div class="title">Hello! My name is Subin. 😊</div>
+              <div class="message">
+                <br />
+                I've been studying Programming for a year and a harf 🐤(It's me),
+                <br />
+                You know, there is so much to learn that I haven't decided what to do yet... 😂,
+                <br />
+                But I'm studying my best in dankook university for my future! 🔭
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                This background is my favorite quote! (Do it directly!)
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class = "container">
+          <div class = "pink-box">
+            <div class = "line">______</div>
+            <div class = "profile-message">
+              2002-01-09 / 21살<br/>
+              경기도 수원 거주<br/>
+              2021 단국대학교 소프트웨어학과 편입<br/>
+              2022 단국대학교 소프트웨어학과 4학년 재학중<br/>
+              첫 팀프로젝트 진행중(캡스톤 프로젝트)<br/>
+              어린 나이의 이점을 살려 배울 수 있는것은 전부 배우려는 중!<br/>
+            </div>
+          </div>
+          <img class = "photo1" src="{% static 'img/프로필.jpg' %}"alt="profile image"/>
+          <div class="white-box">
+            <h3>홍수빈</h3>
+            <div class = "image">
+              <div class = "chat-icon">
+                <img class = "icon" src = "{% static 'img/chat.png' %}" alt="Chat"/>
+                <h4>나와의 채팅</h4>
+              </div>
+              <div class = "chat-icon">
+                <img class = "icon" src = "{% static 'img/profile.png' %}" alt="profile"/>
+                <h4>프로필 관리</h4>
+              </div>
+              <div class = "chat-icon">
+                <img class = "icon" src = "{% static 'img/qutate.png' %}" alt="qutate"/>
+                <h4>카카오 스토리</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+            
+          <div class="skill-container">
+            <div class="skill">
+              <div class="skill-title">
+                <div class="skill-name">💻 My Tech Stack</div>
+              </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-c skill-icon c-style"></i>
+              <div class="skill-title">
+                <div class="skill-name"> C(C++)</div>
+                <div class="skill-usage">using code test</div>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="fab fa-html5 skill-icon html-style"></i>
+              <div class="skill-title">
+                <div class="skill-name">html(css/js)</div>
+                <div class="skill-usage">make front</div>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="fab fa-java skill-icon java-style"></i>
+              <div class="skill-title">
+                <div class="skill-name">java</div>
+                <div class="skill-usage">studying...</div>
+              </div>
+            </div>
+            <div class="skill">
+              <i class="fab fa-react skill-icon react-style"></i>
+              <div class="skill-title">
+                <div class="skill-name">React</div>
+                <div class="skill-usage">studying... for capstone</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="inner">
+          <div class="roadmap-container">
+            <div class="roadmap-title-container">
+              <div class="roadmap-title">My Interest</div>
+              <div class="arrow-container">
+                <i class="fas fa-chevron-circle-left slide-prev"></i>
+                <i class="fas fa-chevron-circle-right slide-next"></i>
+              </div>
+            </div>
+            <ul class="class-list" data-position="0">
+              <li class="class-card">
+                  <img src="{% static 'img/game.png' %}" class="class-image" />
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">Playing games</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">게임</div>
+                      <div class="class-detail">코딩 후 스트레스 풀때는 게임이 최고입니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+               <img src="{% static 'img/the giver.jpg' %}" class="class-image" />
+                 <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788956055053&orderClick=LEa&Kc=" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">Reading books</div>
+                      <div class="class-format">Bookstore</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">원서 베스트셀러 읽기</div>
+                      <div class="class-detail">시간을 내서 독서중입니다 영어공부에도 큰 힘이 됩니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+               <img src="{% static 'img/unitychan.jpg' %}" class="class-image" />
+                <a href="https://www.inflearn.com/roadmaps/355" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">Develop games</div>
+                      <div class="class-format">Online lecture</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">게임개발</div>
+                      <div class="class-detail">유니티를 통한 게임개발에 관심이 있습니다 방학 안에 간단한 게임을 하나 만드는 것이 목표입니다!</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+               <img src="{% static 'imgimg/badukl.jfif' %}"  class="class-image" />
+                <a href="https://www.playok.com/ko/baduk/" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">Play Baduk</div>
+                      <div class="class-format">Online Game</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">바둑</div>
+                      <div class="class-detail">대국을 둔 후 뇌가 활성화되는 느낌은 어디서도 경험할 수 없습니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            <li class="class-card">
+             <img src="{% static 'imgimg/img/guitar.jpg' %}" class="class-image" />
+              <a href="https://www.youtube.com/watch?v=oJNnevjLB9s" target="_blank">
+                <div class="class-container">
+                  <div class="class-skill">
+                    <div class="class-type">Play the guitar</div>
+                    <div class="class-format">Video</div>
+                  </div>
+                  <div class="class-desc">
+                    <div class="class-title">일렉기타</div>
+                    <div class="class-detail">사놓고 창고에 있는 일렉기타를 최근 꺼내었습니다 완주하고 싶은 곡은 Rivers Flows In You 입니다 </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="inner">
+          <div class="roadmap-container">
+            <div class="roadmap-title-container">
+              <div class="roadmap-title">자주 들리는 사이트<span class="roadmap-desc">(클릭 시 이동)</span></div>
+              <div class="arrow-container">
+                <i class="fas fa-chevron-circle-left slide-prev"></i>
+                <i class="fas fa-chevron-circle-right slide-next"></i>
+              </div>
+            </div>
+            <ul class="class-list" data-position="0">
+              <li class="class-card">
+                <img src="https://play-lh.googleusercontent.com/vvR0w2MhaXWZZCn8frTJpRaaU7isvwaDNxuoHDmR2geFda5shUe3feZwuxEMMQyNWgo" class="class-image" />
+                <a href="https://portal.dankook.ac.kr/web/portal" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">DKU Portal</div>
+                      <div class="class-format">Web</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">단국대 포털</div>
+                      <div class="class-detail">여러 정보 입수, 이러닝 사이트 이용등 유용하게 사용중입니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+                <img src="data:image/png;base64,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" class="class-image" />
+                <a href="https://en.dict.naver.com/#/main" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">Naver English Dictionary</div>
+                      <div class="class-format">Dictionary</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">네이버 영어사전</div>
+                      <div class="class-detail">원서를 읽는 도중 유용하게 사용중입니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAAArlBMVEX///81NTUyMjIvLy/q6ur5+fmFhYWWlpbx8fFqamrY2Niurq7S0tJKSkqnp6c+Pj4AbLy1tbW9vb10dHRlZWVRUVEAcb7d3d3ExMSenp6Li4sAaLsAa7zj4+OQkJB/f39CQkJeXl4AdL/c6PNXV1dLS0twcHDt9PnM3e4efsNBi8lSk8zk7faOtdu2zudinNAAYrmIsdnQ4O8gICCgwOAwhMZxpNN6qdUYGBidvt8tc8GpAAAInUlEQVR4nO2baZebNheAkQzewKxewBt4vMySadJmOumb///HXrFLVxdwTnqa6el9PmSMkIV40HIlHMMgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIL4IV6fvv7qKvwr+fL7H7+6Cv9K1vufb2/Tw8a8L9vB+umL9bA5zRqiYzDtzfs26jplScWULGOY57z376xUfArx9JSNci5Jr7s49Ypsq8kBPR+ebC1tcum9dY05W1wXFR7no7Tn61GW6RcssaRiqsK0W//T/6Qcvzw/P+KlhaMAS804vyVB4I4zxrvrGa84nyV24G4XnEeYYNtjDkwbj5oCH5+fX7oKb5izpD2wnIh5+DMSmKPjatFxzmKzwUt98v+UD9/X/mtHzpAh3iKe2XXXc5aMae25ZMw9t842vzGsJDvLPKh9zNuUV3/93lGzhjmbgCpnXVm3o6nN8Q50l7f9/iwdvXRrw7xZF5bKxwHjWJs0Zuwmj2uxJ7eLCttL2AWkyd7uEQe9GRPW0Reno1TogderuMPb0/5BOnpZKxZVEG9LWM+Nx7XOJholG6sJZqaXZfONzVM1TfGWixvoqpo3k0V4zmS0Ef9glTXu8vab/609+NSnDfGWQB+irzJPmzEDdoNJB8bgGGeLm0i52jxUb8bZ9/vFad4MdsJzsqX4Z8pxP3d4e/c/N58/rXc92nRvJkcG1sSDLi1PVyl6JXSZezMufC6nAW9i8u9vcZq3LgP2yCnL32Bnh7097nbN7Cm09UZymrctw8bVjIHRPUHHmBUDVS68TT1lboDecnHq9K+iedMbYFXJVfHnAAeGkmFvn/3n+uMXv1+b7o1lWDbXc0EdGRbrBt5RTSi8Gc5I7liaN+Prrk+cpikaoYFIWM+ktxEWEg17+8uvF1lC21N/Xugtxp/lAQwpc9bxTDM1ofRmuFzq57o3Ic7/0llF6C0Z4c1tVV/b4Vu0bkPeHvxK1rA2zdukI1hbqO3LxoI1wQnMDJU3ERG2+RFvxlOPOCXuNZzZ2xHNFvOmS1yQKwx7e93vyg/fhrVp3iKGB+Mg/agvAwq2IL32ZqzauQHz1idu7p2iitvJ804dq4VT+2RjJJIU3laRzA222s/VvP7NXw9q07wt4QRQsWXKnJh26E1Ac228mSyrbwv1Zjytu8TNvYVXw5jnLdEFwVzuvQumZxDrU09Gi6O++N+Lv+/rdV8EUgK9nTq9KQ2pq1l2ejPiZm7AvZ3X62d8W0Xtp4dwObog4340kkq1kdl+sJ/6dZz73h+6FUBvMy10LUnVCGOsNr+GSVc/zeP4arRGvYlYpGu9pc2nMcu0Eg4jJcJkmVbMkLev7R7Se+9SoQB6gwNUDWiHCRrl6e1Q8mbcqrkB8ya0PWuJFXq45uiz+Vh93q5evyFv36Vx4nlQHPRmMxfLZrGrchwzfFLLwMAiezOuZSCPeBOL1I5OaqBh7hIWMWWL2VJmsdJvod/bi7TIEuK6t0IKoLcDvp0Aw7opy7BsWlineKvmBt1brzbM2wQOE5NspXL1YDw15G23l0xZQ+JC2KAv6Mg1gwuoSKtXzhhGf4o3EWLlC2/N2+t6/dCz0454S8BoYmkrfbO4lJqn19uTL+8h5eLWfeJcOJ6FDF7QyAcUmOgwrSPkjRUmqt6MCT/q3h6Fto7d6ALEW8TV2cvl2lOM4PMf8PaH/5daq4f1GtRKrjasgZgBPH0psNK3GG6eHluetEkFeDNmYg0JvA1pQ7yZcDDxrgZkDjfpBrw9y8NbUS8oLvXkwrThzGTa3d+Q+HvqaVPWWN+5g96sBTe3ijfkuQL0faQLaF4Btuo7cXVq7/f2uNvBoULUTHmgE+lJbJErxhwYuaH7qxsGgssU6eHQWz7vpHJIM6xNf7+QcSDy6hk6MXiK/d4++3r4CHvCrJn1XHTn1GEsbXtvnOnNqGAjlirtI3VWmF3Nmxg/F9JunPUwNOHn66yb7dZMbozD93focjTfDFTGA9G12mJKpFb7zf9NL+HR3/myuBvL3Ll5iGfsiq6qzCXjUbiZWqbjXrVqNkwjxm9Bnm3uXji6kal7M47SG67H9W5Qm1h5lq9yS7xIq871DZ2NgzdlO8l6k4vJkc8/7LG1/OP5rMS/dsbF9zjHg1dBPBNni8IXaBxc4UR1tixB6+7+T19+LN8ab6/n80AnFVimBHYVs+PVOEg3NdpGc97vB+tRMA9cO+77ecI0tpPEDTtf8VZYTpEN3dHPS8Fu9J5fT/zDwBf1xH28/P79V1eBIAiCIAiCIH6O8HiUV4HlwtFsljjqejcE+drfhrsTwRFfGc3rXFNHLWUqvpMoO6hWctxKS/lJUeqP/eL5nyGa51sQ7f2eit2TebMZor4Safd+VsUWWzzH86mEdS6ztN3sGGxEIVYo7RRtUvEID83GgIX/1uUDsC2fZbv5NglzZa03dZes3SNJ3FxG6w3fTStpFuiVt8bLppA/bZ3DXeiP663844RtwtG8x9vEyJvG3+LNaP43Qwz2hz6st6riYqCpU7bFQ7/HW56v9XZLBB2/yB7yFtdXywVOwziuBzTrlJfa8YP9X0l1I83fwoyV3ufN3P5N7S2sm5l7EFffHOz6+MO2N6P62ZHdTAy5mY17uMebEYfOj3mzjmreylszqm3KBut8fG9x0QLMdmQuzASTu7wZyWTQW25m28Q5+ZhomI2NTTGsum10ExU9NP743owwjZ1EeiNQ3v+48RaFQRDY6tmc8iuzxtsszxfoG+Dx2JGGPSsKHLstZJOGgZvKk8E4ceJj8yLJWhalfsT4TcwBjlyv6nPTQqbFuwZwtjMfsu9vOcrO/0E51L8ydebq+Y7XJgRBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARB/Mf4P1hYgNV+PqWPAAAAAElFTkSuQmCC" class="class-image" />
+                <a href="https://www.acmicpc.net/step" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">BACKJOON</div>
+                      <div class="class-format">Coding Test</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">백준 온라인 저지</div>
+                      <div class="class-detail">여러 코딩문제들을 풀 수 있고, 실시간으로 질의응답이 가능합니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+                <img src="data:image/png;base64,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" class="class-image" />
+                <a href="https://stackoverflow.com/" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">stackoverflow</div>
+                      <div class="class-format">Q&A</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">스택 오버플로우</div>
+                      <div class="class-detail">각국의 다양한 사람들이 코딩 중 해결이 되지않는 점을 답변받는 사이트입니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="class-card">
+                <img src="https://i.ytimg.com/vi/MQiHzXZsxQo/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKPb90FeYPxUdKjFPcRD8UaxyFfg" class="class-image" />
+                <a href="https://www.youtube.com/watch?v=rA_2B7Yj4QE&list=RDrA_2B7Yj4QE&start_radio=1" target="_blank">
+                  <div class="class-container">
+                    <div class="class-skill">
+                      <div class="class-type">Youtube/ Piano List</div>
+                      <div class="class-format">Video</div>
+                    </div>
+                    <div class="class-desc">
+                      <div class="class-title">유튜브 재생목록</div>
+                      <div class="class-detail">제가 코딩중 듣는 피아노 노래 목록입니다 집중할때 도움이 됩니다</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="inner">
+          <div class="footer-message">내일 후회할 일을 오늘 만들지 말자, 주어진 업무는 바로 이루어내자!</div>
+          <br/>
+          <div class="footer-contact">전화번호: 010-5481-6740</div>
+          <div class="footer-contact">네이버 메일: zed6740@naver.com</div>
+          <div class="footer-contact">구글 메일: zed6740dankook.ac.kr</div>
+        </div>
+      </footer>
+      <a id = "backtotop"></a>
+      <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
